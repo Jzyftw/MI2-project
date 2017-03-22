@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Marmitonne </title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+
+<body>
+
+
+	<!-- Menu fixe -->
+	<div id="cadre_menu">
+		<ul>
+		  <li><a href="javascript:void(0)" onclick="accueil()">Accueil</a></li>
+			<li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn" onclick="affEntrees()">Entrees</a>
+		    <div class="dropdown-content" id="Entrees">
+		      <a>Entree 1</a>
+		      <a>Entree 2</a>
+		      <a>Entree 3</a>
+		    </div>
+		  <li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn" onclick="affPlats()">Plats</a>
+		    <div class="dropdown-content" id="Plats">
+		      <a onclick="showSpecific(0)">Saute de porc</a>
+		      <a onclick="showSpecific(1)">Foie en sauce</a>
+		    </div>
+		  </li>
+			<div id="recherche">
+	   		<p><input type="text" id="query" /></p>
+				<p><input type="button" value="ok" onclick="analyse()" /> </p>
+			</div>
+		</ul>
+	<!--barre de recherche -->
+	</div>
+	<!--fin menu fixe -->
+
+	<!--Contenu-->
+	<header>
+		<h1>Marmitonne</h1>
+	</header>
+	<article>
+		<h2>Recettes du jour</h2>
+		<!--Recettes -->
+		<div id="recettes">
+		</div>
+
+		<!--Recettes spécifiques-->
+		<div id="SpecificRecipes">
+		</div>
+
+
+	</article>
+
+<script type="text/javascript" src="js/recette.js"></script>
+</body>
+
+</html>
